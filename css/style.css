@@ -1,0 +1,23 @@
+:root {
+    --WHITE: #FFFFFF;
+    --CLOUD: #F4F4FD;
+    --CORNFLOWER: #E7E9FC;
+    --IRIS: #4D5AE5;
+    --OCEAN: #404BBF;
+    --NAVY-BLUE: #2E2F42;
+    --SLATE: #434455;
+    --LATE-SLATE: #8E8F99;
+    --GRAY: #2E2F42;
+    --BLACK: #000000;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--NAVY-BLUE);
+}
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
