@@ -7,193 +7,141 @@
 	--NAVY-BLUE: #2e2f42;
 	--SLATE: #434455;
 	--LATE-SLATE: #8e8f99;
-	--GRAY: #2e2f42;
 	--BLACK: #000;
     --RED: #f00;
 }
-* {
-	margin: 0;
-	padding: 0;
-}
-*:focus {
-    border-radius: 4px;
-    border: 3px dotted var(--RED);
-}
 body {    
 	font-family: "Roboto", sans-serif;
-	color: var(--NAVY-BLUE);
+	color: var(--SLATE);
+    background-color: var(--WHITE);
 }
-.top-line {
-    height: 72px;   
-    padding: 24px 156px;
-}
-.webstudio {
+.logo {
     color: var(--IRIS);
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px; /* 116.667% */
+    line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
     text-decoration: none;
 }
-.menu-list, 
-.address-list, 
-.our-philosophy-list, 
-.we-do-list, 
-.our-team-list,
-.filters-list,
-.portfolio-list {
-    list-style-type: none;
-    display: block;
-}
-.menu-list li, 
-.address-list li, 
-.our-philosophy-list li, 
-.we-do-list li, 
-.our-team-list li,
-.filters-list li,
-.portfolio-list li {
-    display: inline-block;
-}
-.menu-list {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
-}
-.menu-list a {
+.link {
     text-decoration: none;
-	color: var(--NAVY-BLUE);
 }
-.address-list {
+.studio-dark {
+    color: var(--NAVY-BLUE);
+}
+.studio-light {
+    color: var(--CLOUD);
+}
+.list {
+    list-style-type: none;
+}
+.menu-item {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE);
+}
+.menu-item:hover,
+.menu-item:focus,
+.menu-item:active {
+    color: var(--OCEAN);
+}
+.address {
+    font-style: normal;
+}
+.address-item {
     font-size: 16px;
     font-weight: 400;
-    font-style: normal;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
-}
-.address-list a {
-    text-decoration: none;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     color: var(--SLATE);
 }
+.address-item:hover,
+.address-item:focus,
+.address-item:active {
+    color: var(--OCEAN);
+}
+.motto {
+    background-color: var(--NAVY-BLUE);;
+}
+.motto-txt {
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+    color: var(--WHITE);
+}
+.order-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--WHITE);
+    background-color: var(--IRIS);
+    cursor: pointer;
+}
+.order-btn:hover,
+.order-btn:focus,
+.order-btn:active {
+    color: var(--OCEAN);
+}
+.section-title {
+    text-align: center; 
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--NAVY-BLUE);
+}
+.section-item-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--NAVY-BLUE);
+}
+.section-item-txt {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--SLATE);
+}
+.our-team {
+    background-color: var(--CLOUD);
+}
+.our-team-item {
+    background-color: var(--WHITE);
+}
+.filters-btn {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--IRIS);
+    background-color: var(--CLOUD);
+    cursor: pointer;
+}
+.filters-btn:hover,
+.filters-btn:focus,
+.filters-btn:active {
+    color: var(--WHITE);
+    background-color: var(--OCEAN);
+}
 .footer {
-    padding-top: 101.5px;
-    padding-bottom: 100px;
-    padding-left: 120px;
     background-color: var(--NAVY-BLUE);
 }
 .footer-txt {
     color: var(--CLOUD, #F4F4FD);
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px; /* 150% */
+    line-height: 1.5;
     letter-spacing: 0.32px;
-}
-.motto {
-    background-color: var(--NAVY-BLUE);;
-}
-.motto-txt {
-    padding-top: 188px;
-    padding-bottom: 48px;
-    text-align: center;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 60px; /* 107.143% */
-    letter-spacing: 1.12px;
-    color: var(--WHITE);
-}
-.motto button {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-.order-btn,
-.filters-btn {
-    border: 1px solid var(--CORNFLOWER);
-    border-radius: 4px;
-    color: var(--IRIS);
-    background-color: var(--CLOUD);
-}
-.filters-btn {
-    padding: 12px 24px;
-}
-.order-btn {
-    padding: 16px 32px;
-}
-.order-btn:hover,
-.order-btn:active,
-.filters-btn:hover,
-.filters-btn:active {
-    color: var(--WHITE);
-    background-color: var(--OCEAN);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-}
-.our-philosophy h2, 
-.we-do h2, 
-.our-team h2,
-.portfolio h2 {
-    text-align: center; 
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 40px; /* 111.111% */
-    letter-spacing: 0.72px;
-    text-transform: capitalize;
-    margin-bottom: 72px;
-}
-.our-philosophy h2 {
-    display: none;
-}
-.our-philosophy h3, 
-.our-team h3,
-.portfolio h3 {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px; /* 120% */
-    letter-spacing: 0.4px;
-    margin-top: 32px;
-    margin-bottom: 8px;
-}
-.our-philosophy p, 
-.our-team p,
-.portfolio p,
-.filters-btn {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
-    letter-spacing: 0.32px;
-    margin-bottom: 32px;
-}
-.our-team h3,
-.portfolio h3,
-.our-team p,
-.portfolio p {
-    display: block;
-    text-align: center;
-}
-
-.our-philosophy-list li,
-.we-do-list li,
-.our-team-list li,
-.portfolio-list li {
-    margin-right: 24px;
-}
-.our-philosophy-list > :last-child,
-.we-do-list > :last-child,
-.our-team-list > :last-child {
-    margin-right: 0;
-}
-.our-philosophy,
-.we-do,
-.our-team,
-.portfolio {
-    padding: 72px 156px 120px;
-}
-.our-philosophy-list li {
-    width: 264px;
-}
-.our-team {
-    background: var(--CLOUD);
 }
