@@ -88,7 +88,7 @@ body {
 .order-btn:hover,
 .order-btn:focus,
 .order-btn:active {
-    color: var(--OCEAN);
+    background-color: var(--OCEAN);
 }
 .section-title {
     text-align: center; 
@@ -134,6 +134,9 @@ body {
 .filters-btn:active {
     color: var(--WHITE);
     background-color: var(--OCEAN);
+}
+.portfolio-item-link {
+    
 }
 .footer {
     background-color: var(--NAVY-BLUE);
